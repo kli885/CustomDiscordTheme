@@ -1602,6 +1602,7 @@ that have popups, or else the menu breaks when you hover over them */
 .divider-IqmEqJ.beforeGroup-1BvJAt,
 .divider-IqmEqJ.hasContent-1y12-u {
     margin-top: var(--group-spacing) !important;
+    margin-bottom: 5px;
 }
 
 .divider-IqmEqJ:not(#---new-messages-bar) {
@@ -1679,7 +1680,7 @@ that have popups, or else the menu breaks when you hover over them */
 .chat-9g_3Xj form {
     border-top: none;
     box-shadow: none;
-    margin: 0 10px 0 0;
+    margin: 20px 10px 0 10px;
     display: flex;
     padding: 0;
     flex-direction: column-reverse;
@@ -1699,10 +1700,14 @@ that have popups, or else the menu breaks when you hover over them */
     border-radius: var(--dplus-radius-ui);
 }
 
+.replyBar-1oi75v {
+    background-color: #0b0b0b;
+}
+
 .typing-2J1mQU {
     background: transparent !important;
     font-size: 12px;
-    top: calc(-1 * var(--dplus-spacing-app));
+    top: -20px;
     width: max-content;
 }
 
@@ -1899,17 +1904,31 @@ that have popups, or else the menu breaks when you hover over them */
     border-radius: var(--dplus-radius-avatar);
 }
 
+button:not(.colorable-3rVGna.white-11auuQ):not(.colorable-3rVGna.primaryDark-2UJt1G):not(.colorable-3rVGna.red-3T8maV),
+[type="button"]:not(.colorable-3rVGna.white-11auuQ):not(.colorable-3rVGna.primaryDark-2UJt1G):not(.colorable-3rVGna.red-3T8maV) {
+    border-radius: var(--dplus-radius-ui) !important;
+}
+
 .colorable-3rVGna.primaryDark-2UJt1G {
+    border-radius: var(--dplus-radius-avatar)!important;
     background-color: var(--dplus-bgc-ui-base);
 }
 
 .colorable-3rVGna.primaryDark-2UJt1G:hover {
-    background-color: var(--background-accent);
+    border-radius: var(--dplus-radius-avatar)!important;
+    background-color: #232323!important;
 }
 
-.tile-2TcwiO {
-    background: transparent !important;
+.colorable-3rVGna.white-11auuQ {
+    border-radius: var(--dplus-radius-avatar)!important;
 }
+
+.colorable-3rVGna.white-11auuQ:hover {
+    border-radius: var(--dplus-radius-avatar)!important;
+    background-color: #ffffff!important;
+}
+
+
 
 .background-L8lGH6 {
     background-color: var(--dplus-bg-1) !important;
@@ -1952,6 +1971,13 @@ that have popups, or else the menu breaks when you hover over them */
 }
 
 /*this class is the whole member list*/
+span[style="color: rgb(0, 0, 0);"],
+span[style="color: rgb(1, 0, 0);"],
+span[style="color: rgb(0, 1, 0);"],
+span[style="color: rgb(0, 0, 1);"] {
+    color: #949494!important;
+}
+
 .members-3WRCEx>div,
 .container-2o3qEW {
     background: transparent;
@@ -2378,10 +2404,7 @@ that have popups, or else the menu breaks when you hover over them */
 }
 
 /* Switches, Checkboxes, Buttons */
-button,
-[type="button"] {
-    border-radius: var(--dplus-radius-ui) !important;
-}
+
 
 button,
 [type="button"] {
@@ -2495,3 +2518,22 @@ html[style^="font-size: 93.75%;"] {
 }
 
 /*--- 15 Client mod specific ---*/
+
+
+/*--- My settings ---*/
+.withFrame-1sEfxu {
+    height: 25px;
+}
+
+.winButton-3SigSb {
+    height: 30px;
+    width: 38px;
+}
+.wordmarkWindows-1rsity {
+    top: 5px;
+    left: 5px;
+}
+
+.wordmarkWindows-1rsity svg{
+    transform: scale(1.2);
+}
